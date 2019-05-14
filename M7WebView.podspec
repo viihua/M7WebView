@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
  
   s.homepage     = "https://github.com/DevMan7/M7WeView"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "Luoshengyou" => "13798686545@163.com" }
+  s.author             = { "Luoshengyou" => "361208971@qq.com" }
   s.platform     = :ios, "8.0"
   s.requires_arc = true   
   s.source       = { :git => "https://github.com/DeveloperMan7/M7WeView.git", :tag => "0.0.1" }
