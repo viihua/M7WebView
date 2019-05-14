@@ -5,7 +5,7 @@ M7WeView is an extensible WebView which is built on top of WKWebView, the modern
 ## Sample Project
 For a complete example on how to use M7WeView, see the Sample Project.
 ## The Class Structure Chart of M7WeView
-![Image path](https://github.com/DeveloperMan7/M7WebView.git/M7WeView/Image/M7Webview.png)
+![Image path](https://github.com/DeveloperMan7/M7WeView/Image/M7Webview.png)
 ## Minimum Requirements
  - Deployment: iOS 8.0
 ## Usage
