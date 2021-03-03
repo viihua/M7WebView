@@ -31,7 +31,15 @@
     if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 7.0) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-    self.automaticallyAdjustsScrollViewInsets = NO;
+
+    UIScrollView *scrollView = nil;
+    for (UIView *view in self.view.subviews) {
+        if ([view isKindOfClass:[UITableView class]] || [view isKindOfClass:[UICollectionView class]]) {
+            scrollView = (UIScrollView *)view;
+            scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            continue;;
+        }
+    }
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
 }
 

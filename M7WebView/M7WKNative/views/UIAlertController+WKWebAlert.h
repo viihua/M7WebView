@@ -23,7 +23,7 @@ typedef void (^UIAlertControllerPopoverPresentationControllerBlock) (UIPopoverPr
 #endif
 
 typedef void (^BAKit_AlertControllerTextFieldConfigurationActionBlock)(UITextField * _Nullable textField, NSInteger index);
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UIAlertController (WKWebAlert)
 
 + (BOOL)isAlert;
@@ -34,12 +34,12 @@ typedef void (^BAKit_AlertControllerTextFieldConfigurationActionBlock)(UITextFie
  *
  *  Tips：用于调试, 可以尝试查看所有不开源的类的ivar
  */
-+ (NSArray *)ba_ivarList;
+//+ (NSArray *)ba_ivarList;
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wstrict-prototypes"
 
-+ (void)M7lertWithTitle:(NSString *)title message:(NSString *)message completion:(void (^)())completion;
++ (void)M7lertWithTitle:(NSString *)title message:(NSString *)message completion:(nullable void (^)())completion;
 + (void)M7lertWithTitle:(NSString *)title
                 message:(NSString *)message
            action1Title:(NSString *)action1Title
@@ -75,3 +75,4 @@ typedef void (^BAKit_AlertControllerTextFieldConfigurationActionBlock)(UITextFie
 #pragma clang diagnostic pop
 
 @end
+NS_ASSUME_NONNULL_END

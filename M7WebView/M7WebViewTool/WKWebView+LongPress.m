@@ -138,7 +138,8 @@ CGPoint touchPoint;
          id photos;
          SEL fun = NSSelectorFromString(@"shareInstance");
          if ([cls respondsToSelector:fun]) {
-            photos = [cls performSelector:fun];
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+             photos = [cls performSelector:fun];
          }else{
              NSLog(@"请使用M7PhotoBrowser扩展！");
              return ;

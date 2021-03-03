@@ -106,7 +106,7 @@
          }];
     } else {
         
-        if (![[UIApplication sharedApplication] openURL:URL]) {
+        if (![[UIApplication sharedApplication] canOpenURL:URL]) {
             [UIAlertController M7lertWithTitle:@"提示" message:@"打开失败" completion:nil];
         }
     }

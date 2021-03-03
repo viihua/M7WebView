@@ -94,6 +94,7 @@ static NSString* const M7URLProtocolKey = @"M7URLProtocol";
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
     
     NSString *html = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"M7_HTML===%@",html);
     [[self client] URLProtocol:self didLoadData:data];
 }
 

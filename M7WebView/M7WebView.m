@@ -22,7 +22,7 @@
 //屏幕宽高
 #define WKSCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
 #define WKSCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
-#define iPhoneX ((WKSCREEN_HEIGHT == 812.f || WKSCREEN_HEIGHT == 896.f) ? YES : NO)
+//#define iPhoneX ((WKSCREEN_HEIGHT == 812.f || WKSCREEN_HEIGHT == 896.f) ? YES : NO)
 //原生组件高度
 //非iPhone X ：
 //StatusBar高20px，NavigationBar高44px，底部TabBar高49px

@@ -7,7 +7,7 @@
 //
 
 #import <WebKit/WebKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface WKWebView (M7WebCookie)
 
 /** ios11 同步cookies */
@@ -35,3 +35,4 @@
 
 
 @end
+NS_ASSUME_NONNULL_END

@@ -8,7 +8,7 @@
 
 #import "WKBaseWebView.h"
 #import <WebKit/WebKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @class registerURLSchemes;
 
 @protocol M7WKScriptMessageHandler <NSObject>
@@ -76,7 +76,7 @@ typedef void (^MenuBlock)(UIAlertController *  alertController, UIAlertAction * 
 
 /** OC调用JS方法 */
 - (void)callJS:(NSString *)jsMethod;
-- (void)callJS:(NSString *)jsMethod handler:(void (^)(id response, NSError *error))handler;
+- (void)callJS:(NSString *)jsMethod handler:(nullable void (^)(id response, NSError *error))handler;
 
 /*清除backForwardList 列表*/
 - (void)clearBackForwardList;
@@ -116,4 +116,4 @@ typedef void (^MenuBlock)(UIAlertController *  alertController, UIAlertAction * 
 - (void)registerURLSchemes:(NSDictionary *)URLSchemes;
 
 @end
-
+NS_ASSUME_NONNULL_END
