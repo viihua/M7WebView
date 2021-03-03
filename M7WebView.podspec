@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "M7WebView"
-  s.version      = "0.0.2"
+  s.version      = "1.0.0"
   s.summary      = " An component WebView for iOS base on WKWebView ."
   s.description  = <<-DESC
                    M7WeView is an extensible WebView which is built on top of WKWebView, the modern WebKit framework debuted in iOS 8.0. It provides fast Web for developing sophisticated iOS native or hybrid applications.
